@@ -9,4 +9,4 @@ See [.github/build.yml](.github/build.yml) and [.github/autoupdate.yml](.github/
 
 Some fiddeling with repo settings was also necessary.
 
-Use this example on your own risk.
+Use this example on your own risk, no success guaranteed.
