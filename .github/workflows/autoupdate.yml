@@ -19,6 +19,9 @@ jobs:
           RETRY_COUNT: "5"
           RETRY_SLEEP: "300"
           MERGE_CONFLICT_ACTION: "fail"
+      - run: gh pr status
+        env:
+          GH_TOKEN: ${{ github.token }}
       - run: gh pr list -l autoupdate
         env:
           GH_TOKEN: ${{ github.token }}
