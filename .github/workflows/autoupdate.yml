@@ -19,6 +19,9 @@ jobs:
           RETRY_COUNT: "5"
           RETRY_SLEEP: "300"
           MERGE_CONFLICT_ACTION: "fail"
+  build:
+    needs: autoupdate
+    steps:
       - run: pwd
       - run: ls
       - run: gh pr list -l autoupdate
