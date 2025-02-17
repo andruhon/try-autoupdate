@@ -1,5 +1,6 @@
 # Try Autoupdate
 Experimenting with github autoupdate https://github.com/chinthakagodawita/autoupdate/
+See discussion in https://github.com/chinthakagodawita/autoupdate/issues/399
 
 See [.github/build.yml](.github/build.yml) and [.github/autoupdate.yml](.github/autoupdate.yml)
 
