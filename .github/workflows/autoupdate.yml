@@ -23,6 +23,7 @@ jobs:
     name: triggerBuild
     needs: autoupdate
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v4 
       - run: pwd
