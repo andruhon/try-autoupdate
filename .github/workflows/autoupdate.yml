@@ -20,4 +20,8 @@ jobs:
           RETRY_SLEEP: "300"
           MERGE_CONFLICT_ACTION: "fail"
       - run: gh pr list -l autoupdate
+        env:
+          GH_TOKEN: ${{ github.token }}
       - run: gh pr list -l autoupdate | cut -f3 | while read line ; do gh workflow run Build --ref $line ; done
+        env:
+          GH_TOKEN: ${{ github.token }}
