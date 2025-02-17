@@ -3,6 +3,7 @@ Experimenting with github autoupdate https://github.com/chinthakagodawita/autoup
 
 See [.github/build.yml](.github/build.yml) and [.github/autoupdate.yml](.github/autoupdate.yml)
 
-The autoupdate.yml has chinthakagodawita/autoupdate as a first job, and then does another job finding all labelled PRs and triggering a workflow for them.
+- [.github/build.yml](.github/build.yml) does nothing special, it just runs, immitating some real build.
+- [.github/autoupdate.yml](.github/autoupdate.yml) runs on labelled PRs, does autoupdate chinthakagodawita/autoupdate as a first job and then triggers build.yml on open branches with "autoupdate" label as a separate job.
 
 Some fiddeling with repo settings was also necessary.
