@@ -19,6 +19,11 @@ jobs:
           RETRY_COUNT: "5"
           RETRY_SLEEP: "300"
           MERGE_CONFLICT_ACTION: "fail"
+  triggerBuild:
+    name: triggerBuild
+    needs: autoupdate
+    runs-on: ubuntu-latest
+    steps:
       - run: pwd
       - run: ls
       - run: gh pr list -l autoupdate
